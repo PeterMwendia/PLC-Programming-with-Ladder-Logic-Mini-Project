@@ -111,7 +111,7 @@ This project is divided into multiple parts, each focusing on different aspects 
 
 ## Contributions
 
-- Peter Mwendia - Project Lead
+- [Peter Mwendia][https://github.com/PeterMwendia] - Project Lead
 
 ## License
 
