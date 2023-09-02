@@ -120,4 +120,3 @@ This project is provided under the MIT License. See the [LICENSE](LICENSE) file 
 ## Acknowledgments
 
 - Special thanks to OpenPLC for providing the open-source PLC emulator and enabling this project.
-```
