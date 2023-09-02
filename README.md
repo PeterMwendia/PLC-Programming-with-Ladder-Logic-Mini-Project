@@ -1,15 +1,13 @@
 # PLC-Programming-with-Ladder-Logic-Mini-Project
 PLC Programming with Ladder Logic for Cyber-Physical Systems Security.
 
-I apologize for the oversight. Here's the complete README content in proper Markdown format:
-
 ## Project Description
 
 This repository contains the code and documentation for Mini Project #2 in the **CS 6263/ECE 8813: Cyber Physical System Security** course for Summer 2023 at the Georgia Institute of Technology.
 
 ## Project Overview
 
-In Mini Project, we will be working with Programmable Logic Controllers (PLCs) and programming them using Ladder Diagram (LD) format. PLCs are commonly used in industrial automation to control various real-world systems. The LD format is widely used for its ease of understanding and representation of logic.
+In Mini Project #2, we will be working with Programmable Logic Controllers (PLCs) and programming them using Ladder Diagram (LD) format. PLCs are commonly used in industrial automation to control various real-world systems. The LD format is widely used for its ease of understanding and representation of logic.
 
 ## Tools and Environment
 
@@ -17,40 +15,81 @@ In Mini Project, we will be working with Programmable Logic Controllers (PLCs) a
 
 - **OpenPLC:** Instead of using a real PLC, we will use an open-source PLC emulator called OpenPLC to do the programming. The performance of the programs will be evaluated in simulated environments representing the behavior of real-world processes.
 
-## Getting Started
+## Installation and Environment Setup
 
-To get started with this project, follow these steps:
+To set up your environment and install OpenPLC, follow these steps:
 
-### Write PLC Programs
+1. **Install VirtualBox (Windows Users) or VMware Fusion (Mac Users)**
 
-Use Ladder Diagram (LD) to write your PLC programs. You can find tutorials online to help you get started with LD.
+   - Download and install [VirtualBox](https://www.virtualbox.org/) (for Windows users) or [VMware Fusion](https://www.vmware.com/products/fusion.html) (for Mac users).
 
-### Test Programs
+2. **Download the Virtual Machine (VM) and Project Files**
 
-Test your programs thoroughly to ensure they function as expected.
+   - Download the provided VM files in .ova format and project files in .zip format.
 
-### Compile Programs
+3. **Import the VM into VirtualBox or VMware**
 
-Compile your programs to generate XML and .ST files. These files will be used for testing in later parts of the project.
+   - Open VirtualBox (for Windows users) or VMware Fusion (for Mac users).
+   - Import the VM by clicking on the .ova file or importing it directly in your hypervisor.
 
-### Upload and Test
+4. **Set VM Specifications**
 
-Upload the generated .ST files to the OpenPLC simulator and ensure they compile without errors.
+   - Configure the VM settings with the following specifications for optimal performance:
+     - CPU allocation: 4 physical cores or more
+     - RAM allocation: 8192 MB or more
 
-### Run Simulators
+5. **Transfer Project Files to VM**
 
-For specific parts of the project, run simulators provided to simulate real-world processes and test your programs.
+   - Drag and drop the project files into the VM.
+
+6. **Start OpenPLC Server**
+
+   - Open a terminal in the VM and navigate to the "OpenPLC v3" folder.
+   - Start the OpenPLC server by running the following command:
+
+     ```shell
+     sudo ./start_openplc.sh
+     ```
+
+   - If you encounter an error about another process running on port 8080, use the following command to kill the process:
+
+     ```shell
+     sudo fuser -k 8080/tcp
+     ```
+
+   - Access the OpenPLC server in your web browser at http://localhost:8080.
+
+7. **Begin Programming**
+
+   - Open a terminal in the VM and navigate to the "/Desktop/OpenPLC Editor" directory.
+   - Run the OpenPLC editor with:
+
+     ```shell
+     sudo ./openplc_editor.sh
+     ```
+
+   - Create an empty folder for each project part and choose the directory for that part.
+
+8. **Testing and Compilation**
+
+   - Test the performance of your written program using the Run button within the IDE.
+   - Generate XML and .ST versions of the program in the relevant directory.
+
+9. **Simulators**
+
+   - Use provided simulators to test your programs for specific project parts.
 
 ## Sample Code for Running Simulators
 
 To run the simulators for specific project parts, use the following sample code:
 
-#### Part 2 & 3 - Robot Path and Traffic Light Simulators
+### Part 2 & 3 - Robot Path and Traffic Light Simulators
 
 Navigate to the directories for Robot Path and Traffic Light simulators and run:
 
 ```shell
 python ProcessSimulator.py
+
 ```
 
 #### Part 5 - Stirring System Simulator
