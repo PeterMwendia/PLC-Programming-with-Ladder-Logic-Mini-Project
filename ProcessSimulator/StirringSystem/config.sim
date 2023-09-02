@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE simulation SYSTEM "simulation_settings.dtd">
+<simulation version="1.0" name="StirringSystem 1" start="0.0" end="-1" stepSize="0.01" outputSteps="0" tolerance="1e-6" method="dassl" filePath="sme.5.0.0_1541363655_505671508.exe" resultFilePath="sme.5.0.0_1541363655_505671508.mat">
+
+  <model name="CPS.Process.WaterTank.StirringSystem" description="" numOfVariables="139">
+    <variable name="booleanToReal.realFalse" value="0.0" defaultValue="0.0" type="Real" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="20" description="Output signal for false Boolean input" equationBound="" protected="false" final="false"/>
+    <variable name="booleanToReal.realTrue" value="0.2" defaultValue="0.2" type="Real" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="19" description="Output signal for true Boolean input" equationBound="" protected="false" final="false"/>
+    <variable name="booleanToReal.u" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="63" description="Connector of Boolean input signal" equationBound="" protected="false" final="false"/>
+    <variable name="booleanToReal.y" value="0.0" defaultValue="0.0" type="Real" kind="VARIABLE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="62" description="Connector of Real output signal" equationBound="" protected="false" final="false"/>
+    <variable name="booleanToReal1.realFalse" value="0.0" defaultValue="0.0" type="Real" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="22" description="Output signal for false Boolean input" equationBound="" protected="false" final="false"/>
+    <variable name="booleanToReal1.realTrue" value="0.2" defaultValue="0.2" type="Real" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="21" description="Output signal for true Boolean input" equationBound="" protected="false" final="false"/>
+    <variable name="booleanToReal1.u" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="61" description="Connector of Boolean input signal" equationBound="" protected="false" final="false"/>
+    <variable name="booleanToReal1.y" value="0.0" defaultValue="0.0" type="Real" kind="VARIABLE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="60" description="Connector of Real output signal" equationBound="" protected="false" final="false"/>
+    <variable name="booleanToReal2.realFalse" value="0.0" defaultValue="0.0" type="Real" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="24" description="Output signal for false Boolean input" equationBound="" protected="false" final="false"/>
+    <variable name="booleanToReal2.realTrue" value="0.2" defaultValue="0.2" type="Real" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="23" description="Output signal for true Boolean input" equationBound="" protected="false" final="false"/>
+    <variable name="booleanToReal2.u" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="59" description="Connector of Boolean input signal" equationBound="" protected="false" final="false"/>
+    <variable name="booleanToReal2.y" value="0.0" defaultValue="0.0" type="Real" kind="VARIABLE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="58" description="Connector of Real output signal" equationBound="" protected="false" final="false"/>
+    <variable name="booleanToReal3.realFalse" value="0.0" defaultValue="0.0" type="Real" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="36" description="Output signal for false Boolean input" equationBound="" protected="false" final="false"/>
+    <variable name="booleanToReal3.realTrue" value="1.0" defaultValue="1.0" type="Real" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="35" description="Output signal for true Boolean input" equationBound="" protected="false" final="false"/>
+    <variable name="booleanToReal3.u" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="57" description="Connector of Boolean input signal" equationBound="" protected="false" final="false"/>
+    <variable name="booleanToReal3.y" value="0.0" defaultValue="0.0" type="Real" kind="VARIABLE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="56" description="Connector of Real output signal" equationBound="" protected="false" final="false"/>
+    <variable name="booleanToReal4.realFalse" value="0.0" defaultValue="0.0" type="Real" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="38" description="Output signal for false Boolean input" equationBound="" protected="false" final="false"/>
+    <variable name="booleanToReal4.realTrue" value="-0.5" defaultValue="-0.5" type="Real" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="37" description="Output signal for true Boolean input" equationBound="" protected="false" final="false"/>
+    <variable name="booleanToReal4.u" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="55" description="Connector of Boolean input signal" equationBound="" protected="false" final="false"/>
+    <variable name="booleanToReal4.y" value="0.0" defaultValue="0.0" type="Real" kind="VARIABLE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="54" description="Connector of Real output signal" equationBound="" protected="false" final="false"/>
+    <variable name="der(stirringTank.h)" value="0.0" defaultValue="0.0" type="Real" kind="DERIVATIVE" direction="BIDIR" initType="calc" unit="m/s" displayUnit="" index="0" description="Derivative of stirringTank.h" equationBound="" protected="false" final="false"/>
+    <variable name="opcServer.hostName" value="opc.tcp://localhost:4840" defaultValue="opc.tcp://localhost:4840" type="String" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="0" description="The name of the host where the OPC server is located" equationBound="" protected="false" final="false"/>
+    <variable name="opcServer.serverConnector" value="0" defaultValue="0" type="Integer" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="64" description="" equationBound="" protected="false" final="false"/>
+    <variable name="opcServer.serverID" value="0" defaultValue="0" type="Integer" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="7" description="A unique and global server ID" equationBound="" protected="true" final="false"/>
+    <variable name="readBoolean.firstTrigger" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="9" description="Rising edge signals first sample instant" equationBound="" protected="true" final="false"/>
+    <variable name="readBoolean.nodeID" value="3" defaultValue="3" type="String" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="1" description="The node identifier" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean.nodeIDType" value="1" defaultValue="1" type="Integer" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="7" description="The node identifier type: 1 = numeric, 2 = string alloc" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean.nodeNamespace" value="2" defaultValue="2" type="Integer" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="6" description="The node namespace" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean.run" value="true" defaultValue="true" type="Boolean" kind="PARAM" direction="BIDIR" initType="calc" unit="" displayUnit="" index="8" description="A help parameter that makes sure the external functions are only called once" equationBound="" protected="true" final="false"/>
+    <variable name="readBoolean.samplePeriod" value="0.1" defaultValue="0.1" type="Real" kind="PARAM" direction="BIDIR" initType="exact" unit="s" displayUnit="" index="4" description="Sample period of component" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean.sampleTrigger" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="8" description="True, if sample time instant" equationBound="" protected="true" final="false"/>
+    <variable name="readBoolean.serverID" value="0" defaultValue="0" type="Integer" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="10" description="The unique ID of the server the block is connected to" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean.startTime" value="0.0" defaultValue="0.0" type="Real" kind="PARAM" direction="BIDIR" initType="exact" unit="s" displayUnit="" index="5" description="First sample time instant" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean.y" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="11" description="The data read from the item on the OPC server" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean.y_start" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="12" description="initial value of output signal" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean1.firstTrigger" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="14" description="Rising edge signals first sample instant" equationBound="" protected="true" final="false"/>
+    <variable name="readBoolean1.nodeID" value="5" defaultValue="5" type="String" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="2" description="The node identifier" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean1.nodeIDType" value="1" defaultValue="1" type="Integer" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="12" description="The node identifier type: 1 = numeric, 2 = string alloc" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean1.nodeNamespace" value="2" defaultValue="2" type="Integer" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="11" description="The node namespace" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean1.run" value="true" defaultValue="true" type="Boolean" kind="PARAM" direction="BIDIR" initType="calc" unit="" displayUnit="" index="13" description="A help parameter that makes sure the external functions are only called once" equationBound="" protected="true" final="false"/>
+    <variable name="readBoolean1.samplePeriod" value="0.1" defaultValue="0.1" type="Real" kind="PARAM" direction="BIDIR" initType="exact" unit="s" displayUnit="" index="9" description="Sample period of component" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean1.sampleTrigger" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="13" description="True, if sample time instant" equationBound="" protected="true" final="false"/>
+    <variable name="readBoolean1.serverID" value="0" defaultValue="0" type="Integer" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="15" description="The unique ID of the server the block is connected to" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean1.startTime" value="0.0" defaultValue="0.0" type="Real" kind="PARAM" direction="BIDIR" initType="exact" unit="s" displayUnit="" index="10" description="First sample time instant" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean1.y" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="16" description="The data read from the item on the OPC server" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean1.y_start" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="17" description="initial value of output signal" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean2.firstTrigger" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="19" description="Rising edge signals first sample instant" equationBound="" protected="true" final="false"/>
+    <variable name="readBoolean2.nodeID" value="7" defaultValue="7" type="String" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="3" description="The node identifier" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean2.nodeIDType" value="1" defaultValue="1" type="Integer" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="17" description="The node identifier type: 1 = numeric, 2 = string alloc" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean2.nodeNamespace" value="2" defaultValue="2" type="Integer" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="16" description="The node namespace" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean2.run" value="true" defaultValue="true" type="Boolean" kind="PARAM" direction="BIDIR" initType="calc" unit="" displayUnit="" index="18" description="A help parameter that makes sure the external functions are only called once" equationBound="" protected="true" final="false"/>
+    <variable name="readBoolean2.samplePeriod" value="0.1" defaultValue="0.1" type="Real" kind="PARAM" direction="BIDIR" initType="exact" unit="s" displayUnit="" index="14" description="Sample period of component" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean2.sampleTrigger" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="18" description="True, if sample time instant" equationBound="" protected="true" final="false"/>
+    <variable name="readBoolean2.serverID" value="0" defaultValue="0" type="Integer" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="20" description="The unique ID of the server the block is connected to" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean2.startTime" value="0.0" defaultValue="0.0" type="Real" kind="PARAM" direction="BIDIR" initType="exact" unit="s" displayUnit="" index="15" description="First sample time instant" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean2.y" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="21" description="The data read from the item on the OPC server" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean2.y_start" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="22" description="initial value of output signal" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean3.firstTrigger" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="24" description="Rising edge signals first sample instant" equationBound="" protected="true" final="false"/>
+    <variable name="readBoolean3.nodeID" value="9" defaultValue="9" type="String" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="4" description="The node identifier" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean3.nodeIDType" value="1" defaultValue="1" type="Integer" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="28" description="The node identifier type: 1 = numeric, 2 = string alloc" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean3.nodeNamespace" value="2" defaultValue="2" type="Integer" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="27" description="The node namespace" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean3.run" value="true" defaultValue="true" type="Boolean" kind="PARAM" direction="BIDIR" initType="calc" unit="" displayUnit="" index="29" description="A help parameter that makes sure the external functions are only called once" equationBound="" protected="true" final="false"/>
+    <variable name="readBoolean3.samplePeriod" value="0.1" defaultValue="0.1" type="Real" kind="PARAM" direction="BIDIR" initType="exact" unit="s" displayUnit="" index="25" description="Sample period of component" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean3.sampleTrigger" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="23" description="True, if sample time instant" equationBound="" protected="true" final="false"/>
+    <variable name="readBoolean3.serverID" value="0" defaultValue="0" type="Integer" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="25" description="The unique ID of the server the block is connected to" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean3.startTime" value="0.0" defaultValue="0.0" type="Real" kind="PARAM" direction="BIDIR" initType="exact" unit="s" displayUnit="" index="26" description="First sample time instant" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean3.y" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="26" description="The data read from the item on the OPC server" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean3.y_start" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="27" description="initial value of output signal" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean4.firstTrigger" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="29" description="Rising edge signals first sample instant" equationBound="" protected="true" final="false"/>
+    <variable name="readBoolean4.nodeID" value="11" defaultValue="11" type="String" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="5" description="The node identifier" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean4.nodeIDType" value="1" defaultValue="1" type="Integer" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="33" description="The node identifier type: 1 = numeric, 2 = string alloc" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean4.nodeNamespace" value="2" defaultValue="2" type="Integer" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="32" description="The node namespace" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean4.run" value="true" defaultValue="true" type="Boolean" kind="PARAM" direction="BIDIR" initType="calc" unit="" displayUnit="" index="34" description="A help parameter that makes sure the external functions are only called once" equationBound="" protected="true" final="false"/>
+    <variable name="readBoolean4.samplePeriod" value="0.1" defaultValue="0.1" type="Real" kind="PARAM" direction="BIDIR" initType="exact" unit="s" displayUnit="" index="30" description="Sample period of component" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean4.sampleTrigger" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="28" description="True, if sample time instant" equationBound="" protected="true" final="false"/>
+    <variable name="readBoolean4.serverID" value="0" defaultValue="0" type="Integer" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="30" description="The unique ID of the server the block is connected to" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean4.startTime" value="0.0" defaultValue="0.0" type="Real" kind="PARAM" direction="BIDIR" initType="exact" unit="s" displayUnit="" index="31" description="First sample time instant" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean4.y" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="31" description="The data read from the item on the OPC server" equationBound="" protected="false" final="false"/>
+    <variable name="readBoolean4.y_start" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="32" description="initial value of output signal" equationBound="" protected="false" final="false"/>
+    <variable name="stirringTank.A" value="1.0" defaultValue="1.0" type="Real" kind="PARAM" direction="BIDIR" initType="exact" unit="m2" displayUnit="" index="0" description="Bottom area" equationBound="" protected="false" final="false"/>
+    <variable name="stirringTank.H" value="4.0" defaultValue="4.0" type="Real" kind="PARAM" direction="BIDIR" initType="exact" unit="m" displayUnit="" index="1" description="Maximum Height" equationBound="" protected="false" final="false"/>
+    <variable name="stirringTank.h" value="0.0" defaultValue="0.0" type="Real" kind="STATE" direction="BIDIR" initType="approx" unit="m" displayUnit="" index="0" description="Liquid level" equationBound="" protected="false" final="false"/>
+    <variable name="stirringTank.levelEmpty" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="65" description="" equationBound="" protected="false" final="false"/>
+    <variable name="stirringTank.levelHigh" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="68" description="" equationBound="" protected="false" final="false"/>
+    <variable name="stirringTank.levelLow" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="66" description="" equationBound="" protected="false" final="false"/>
+    <variable name="stirringTank.levelMedium" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="67" description="" equationBound="" protected="false" final="false"/>
+    <variable name="stirringTank.maxFlow" value="0.5" defaultValue="0.5" type="Real" kind="PARAM" direction="BIDIR" initType="exact" unit="m3/s" displayUnit="" index="2" description="Maximum flow through output valve" equationBound="" protected="false" final="false"/>
+    <variable name="stirringTank.nin" value="3" defaultValue="3" type="Integer" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="3" description="Number of input valves" equationBound="" protected="false" final="false"/>
+    <variable name="stirringTank.qIn[1]" value="0.0" defaultValue="0.0" type="Real" kind="VARIABLE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="4" description="Flow through input valve, connector" equationBound="" protected="false" final="false"/>
+    <variable name="stirringTank.qIn[2]" value="0.0" defaultValue="0.0" type="Real" kind="VARIABLE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="5" description="Flow through input valve, connector" equationBound="" protected="false" final="false"/>
+    <variable name="stirringTank.qIn[3]" value="0.0" defaultValue="0.0" type="Real" kind="VARIABLE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="6" description="Flow through input valve, connector" equationBound="" protected="false" final="false"/>
+    <variable name="stirringTank.qOut" value="0.0" defaultValue="0.0" type="Real" kind="VARIABLE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="2" description="" equationBound="" protected="false" final="false"/>
+    <variable name="stirringTank.qOutMax" value="0.0" defaultValue="0.0" type="Real" kind="VARIABLE" direction="BIDIR" initType="calc" unit="m3/s" displayUnit="" index="3" description="Maximum output flow considering that the tank level cannot be negative" equationBound="" protected="false" final="false"/>
+    <variable name="stirringTank.qOutValve" value="0.0" defaultValue="0.0" type="Real" kind="VARIABLE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="1" description="Actuator controlling output flow, connector" equationBound="" protected="false" final="false"/>
+    <variable name="stirringTank.stirring" value="0.0" defaultValue="0.0" type="Real" kind="VARIABLE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="0" description="Stirring motor power input" equationBound="" protected="false" final="false"/>
+    <variable name="writeBoolean.firstTrigger" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="34" description="Rising edge signals first sample instant" equationBound="" protected="true" final="false"/>
+    <variable name="writeBoolean.nodeID" value="2" defaultValue="2" type="String" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="6" description="The node identifier" equationBound="" protected="false" final="false"/>
+    <variable name="writeBoolean.nodeIDType" value="1" defaultValue="1" type="Integer" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="42" description="The node identifier type: 1 = numeric, 2 = string alloc" equationBound="" protected="false" final="false"/>
+    <variable name="writeBoolean.nodeNamespace" value="2" defaultValue="2" type="Integer" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="41" description="The node namespace" equationBound="" protected="false" final="false"/>
+    <variable name="writeBoolean.run" value="true" defaultValue="true" type="Boolean" kind="PARAM" direction="BIDIR" initType="calc" unit="" displayUnit="" index="43" description="A help parameter that makes sure the external functions are only called once" equationBound="" protected="true" final="false"/>
+    <variable name="writeBoolean.samplePeriod" value="0.1" defaultValue="0.1" type="Real" kind="PARAM" direction="BIDIR" initType="exact" unit="s" displayUnit="" index="39" description="Sample period of component" equationBound="" protected="false" final="false"/>
+    <variable name="writeBoolean.sampleTrigger" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="33" description="True, if sample time instant" equationBound="" protected="true" final="false"/>
+    <variable name="writeBoolean.serverID" value="0" defaultValue="0" type="Integer" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="53" description="The unique ID of the server the block is connected to" equationBound="" protected="false" final="false"/>
+    <variable name="writeBoolean.startTime" value="0.0" defaultValue="0.0" type="Real" kind="PARAM" direction="BIDIR" initType="exact" unit="s" displayUnit="" index="40" description="First sample time instant" equationBound="" protected="false" final="false"/>
+    <variable name="writeBoolean.u" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="35" description="Input signal to be sampled" equationBound="" protected="false" final="false"/>
+    <variable name="writeBoolean.writeSignal" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="36" description="The data to be written to the item on the OPC server" equationBound="" protected="false" final="false"/>
+    <variable name="writeBoolean1.firstTrigger" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="38" description="Rising edge signals first sample instant" equationBound="" protected="true" final="false"/>
+    <variable name="writeBoolean1.nodeID" value="4" defaultValue="4" type="String" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="7" description="The node identifier" equationBound="" protected="false" final="false"/>
+    <variable name="writeBoolean1.nodeIDType" value="1" defaultValue="1" type="Integer" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="47" description="The node identifier type: 1 = numeric, 2 = string alloc" equationBound="" protected="false" final="false"/>
+    <variable name="writeBoolean1.nodeNamespace" value="2" defaultValue="2" type="Integer" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="46" description="The node namespace" equationBound="" protected="false" final="false"/>
+    <variable name="writeBoolean1.run" value="true" defaultValue="true" type="Boolean" kind="PARAM" direction="BIDIR" initType="calc" unit="" displayUnit="" index="48" description="A help parameter that makes sure the external functions are only called once" equationBound="" protected="true" final="false"/>
+    <variable name="writeBoolean1.samplePeriod" value="0.1" defaultValue="0.1" type="Real" kind="PARAM" direction="BIDIR" initType="exact" unit="s" displayUnit="" index="44" description="Sample period of component" equationBound="" protected="false" final="false"/>
+    <variable name="writeBoolean1.sampleTrigger" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="37" description="True, if sample time instant" equationBound="" protected="true" final="false"/>
+    <variable name="writeBoolean1.serverID" value="0" defaultValue="0" type="Integer" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="52" description="The unique ID of the server the block is connected to" equationBound="" protected="false" final="false"/>
+    <variable name="writeBoolean1.startTime" value="0.0" defaultValue="0.0" type="Real" kind="PARAM" direction="BIDIR" initType="exact" unit="s" displayUnit="" index="45" description="First sample time instant" equationBound="" protected="false" final="false"/>
+    <variable name="writeBoolean1.u" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="39" description="Input signal to be sampled" equationBound="" protected="false" final="false"/>
+    <variable name="writeBoolean1.writeSignal" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="40" description="The data to be written to the item on the OPC server" equationBound="" protected="false" final="false"/>
+    <variable name="writeBoolean2.firstTrigger" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="42" description="Rising edge signals first sample instant" equationBound="" protected="true" final="false"/>
+    <variable name="writeBoolean2.nodeID" value="6" defaultValue="6" type="String" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="8" description="The node identifier" equationBound="" protected="false" final="false"/>
+    <variable name="writeBoolean2.nodeIDType" value="1" defaultValue="1" type="Integer" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="52" description="The node identifier type: 1 = numeric, 2 = string alloc" equationBound="" protected="false" final="false"/>
+    <variable name="writeBoolean2.nodeNamespace" value="2" defaultValue="2" type="Integer" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="51" description="The node namespace" equationBound="" protected="false" final="false"/>
+    <variable name="writeBoolean2.run" value="true" defaultValue="true" type="Boolean" kind="PARAM" direction="BIDIR" initType="calc" unit="" displayUnit="" index="53" description="A help parameter that makes sure the external functions are only called once" equationBound="" protected="true" final="false"/>
+    <variable name="writeBoolean2.samplePeriod" value="0.1" defaultValue="0.1" type="Real" kind="PARAM" direction="BIDIR" initType="exact" unit="s" displayUnit="" index="49" description="Sample period of component" equationBound="" protected="false" final="false"/>
+    <variable name="writeBoolean2.sampleTrigger" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="41" description="True, if sample time instant" equationBound="" protected="true" final="false"/>
+    <variable name="writeBoolean2.serverID" value="0" defaultValue="0" type="Integer" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="51" description="The unique ID of the server the block is connected to" equationBound="" protected="false" final="false"/>
+    <variable name="writeBoolean2.startTime" value="0.0" defaultValue="0.0" type="Real" kind="PARAM" direction="BIDIR" initType="exact" unit="s" displayUnit="" index="50" description="First sample time instant" equationBound="" protected="false" final="false"/>
+    <variable name="writeBoolean2.u" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="43" description="Input signal to be sampled" equationBound="" protected="false" final="false"/>
+    <variable name="writeBoolean2.writeSignal" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="44" description="The data to be written to the item on the OPC server" equationBound="" protected="false" final="false"/>
+    <variable name="writeBoolean3.firstTrigger" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="46" description="Rising edge signals first sample instant" equationBound="" protected="true" final="false"/>
+    <variable name="writeBoolean3.nodeID" value="8" defaultValue="8" type="String" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="9" description="The node identifier" equationBound="" protected="false" final="false"/>
+    <variable name="writeBoolean3.nodeIDType" value="1" defaultValue="1" type="Integer" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="57" description="The node identifier type: 1 = numeric, 2 = string alloc" equationBound="" protected="false" final="false"/>
+    <variable name="writeBoolean3.nodeNamespace" value="2" defaultValue="2" type="Integer" kind="PARAM" direction="BIDIR" initType="exact" unit="" displayUnit="" index="56" description="The node namespace" equationBound="" protected="false" final="false"/>
+    <variable name="writeBoolean3.run" value="true" defaultValue="true" type="Boolean" kind="PARAM" direction="BIDIR" initType="calc" unit="" displayUnit="" index="58" description="A help parameter that makes sure the external functions are only called once" equationBound="" protected="true" final="false"/>
+    <variable name="writeBoolean3.samplePeriod" value="0.1" defaultValue="0.1" type="Real" kind="PARAM" direction="BIDIR" initType="exact" unit="s" displayUnit="" index="54" description="Sample period of component" equationBound="" protected="false" final="false"/>
+    <variable name="writeBoolean3.sampleTrigger" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="45" description="True, if sample time instant" equationBound="" protected="true" final="false"/>
+    <variable name="writeBoolean3.serverID" value="0" defaultValue="0" type="Integer" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="50" description="The unique ID of the server the block is connected to" equationBound="" protected="false" final="false"/>
+    <variable name="writeBoolean3.startTime" value="0.0" defaultValue="0.0" type="Real" kind="PARAM" direction="BIDIR" initType="exact" unit="s" displayUnit="" index="55" description="First sample time instant" equationBound="" protected="false" final="false"/>
+    <variable name="writeBoolean3.u" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="47" description="Input signal to be sampled" equationBound="" protected="false" final="false"/>
+    <variable name="writeBoolean3.writeSignal" value="false" defaultValue="false" type="Boolean" kind="DISCRETE" direction="BIDIR" initType="calc" unit="" displayUnit="" index="48" description="The data to be written to the item on the OPC server" equationBound="" protected="false" final="false"/>
+  </model>
+<Options>
+<Option name="Solver">
+<OptionValue name="MaxStepSize" value="0">
+</OptionValue>
+<OptionValue name="EventHysteresisEpsilon" value="1e-10">
+</OptionValue>
+<OptionValue name="EventDetection" value="true">
+</OptionValue>
+<OptionValue name="NonLinearSolverTolerance" value="1e-12">
+</OptionValue>
+<OptionValue name="MaxNoInternalSteps" value="0">
+</OptionValue>
+</Option>
+<Option name="CheckMinMax">
+<OptionValue name="enable" value="false">
+</OptionValue>
+</Option>
+<Option name="StopAtSteadyState">
+<OptionValue name="enable" value="false">
+</OptionValue>
+</Option>
+<Option name="SyncWithRealTime">
+<OptionValue name="enable" value="true">
+</OptionValue>
+</Option>
+<Option name="InteractiveCommunication">
+<OptionValue name="rate" value="">
+</OptionValue>
+</Option>
+<Option name="InputVariableDataFile">
+<OptionValue name="FilePath" value="">
+</OptionValue>
+</Option>
+<Option name="OutputSettings">
+<OptionValue name="StoreToFile" value="true">
+</OptionValue>
+<OptionValue name="StoreStates" value="true">
+</OptionValue>
+<OptionValue name="StoreDerivatives" value="true">
+</OptionValue>
+<OptionValue name="StoreAlgebraics" value="true">
+</OptionValue>
+<OptionValue name="StoreParameters" value="true">
+</OptionValue>
+<OptionValue name="StoreConstants" value="false">
+</OptionValue>
+<OptionValue name="StoreProtected" value="false">
+</OptionValue>
+<OptionValue name="StoreEventPoints" value="true">
+</OptionValue>
+<OptionValue name="StoreSimulationLog" value="false">
+</OptionValue>
+<OptionValue name="FormatDoublePrecision" value="true">
+</OptionValue>
+</Option>
+</Options>
+<ExternalLibraries>
+<Library name="libopen62541.so" uri="modelica://OPCUA/Resources/Library/linux64" path="/home/qinchen/.systemmodeler/LibraryArchives/3a3235d7-90d1-4ed1-a011-dda90188575d/OPCUA 1.0/Resources/Library/linux64"/>
+<Library name="libOPCUA.so" uri="modelica://OPCUA/Resources/Library/linux64" path="/home/qinchen/.systemmodeler/LibraryArchives/3a3235d7-90d1-4ed1-a011-dda90188575d/OPCUA 1.0/Resources/Library/linux64"/>
+</ExternalLibraries>
+</simulation>

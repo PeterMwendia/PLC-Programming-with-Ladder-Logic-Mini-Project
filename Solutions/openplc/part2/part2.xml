@@ -1,0 +1,215 @@
+<project xmlns:ns1="http://www.plcopen.org/xml/tc6_0201" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.plcopen.org/xml/tc6_0201">
+  <fileHeader companyName="Unknown" productName="Unnamed" productVersion="1" creationDateTime="2020-09-15T09:29:34"/>
+  <contentHeader name="Unnamed" modificationDateTime="2023-06-14T00:00:00">
+    <coordinateInfo>
+      <fbd>
+        <scaling x="10" y="10"/>
+      </fbd>
+      <ld>
+        <scaling x="10" y="10"/>
+      </ld>
+      <sfc>
+        <scaling x="10" y="10"/>
+      </sfc>
+    </coordinateInfo>
+  </contentHeader>
+  <types>
+    <dataTypes/>
+    <pous>
+      <pou name="RobotController" pouType="program">
+        <interface>
+          <localVars>
+            <variable name="Input0" address="%IW1.0">
+              <type>
+                <INT/>
+              </type>
+            </variable>
+            <variable name="Input1" address="%IW1.2">
+              <type>
+                <INT/>
+              </type>
+            </variable>
+            <variable name="Output0" address="%QW1.0">
+              <type>
+                <INT/>
+              </type>
+            </variable>
+            <variable name="Output1" address="%QW1.2">
+              <type>
+                <INT/>
+              </type>
+            </variable>
+            <variable name="MoveRight" address="%IX1.0">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="MoveLeft" address="%IX1.1">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="MoveUp" address="%IX1.2">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="MoveDown" address="%IX1.3">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+          </localVars>
+        </interface>
+        <body>
+          <ST>
+            <name>RobotController</name>
+            <pous>
+              <pou name="RobotController" pouType="function">
+                <interface>
+                  <formalParameters/>
+                </interface>
+                <body>
+                  <variableInitialization>
+                    <variables>
+                      <variable>MoveRight</variable>
+                      <variable>MoveLeft</variable>
+                      <variable>MoveUp</variable>
+                      <variable>MoveDown</variable>
+                    </variables>
+                    <expressions>
+                      <expression>
+                        <variable>MoveRight</variable>
+                        <value>
+                          <BOOL>false</BOOL>
+                        </value>
+                      </expression>
+                      <expression>
+                        <variable>MoveLeft</variable>
+                        <value>
+                          <BOOL>false</BOOL>
+                        </value>
+                      </expression>
+                      <expression>
+                        <variable>MoveUp</variable>
+                        <value>
+                          <BOOL>false</BOOL>
+                        </value>
+                      </expression>
+                      <expression>
+                        <variable>MoveDown</variable>
+                        <value>
+                          <BOOL>false</BOOL>
+                        </value>
+                      </expression>
+                    </expressions>
+                  </variableInitialization>
+                  <if>
+                    <condition>
+                      <lt>
+                        <operand1>
+                          <variable>Input0</variable>
+                        </operand1>
+                        <operand2>
+                          <variable>Output0</variable>
+                        </operand2>
+                      </lt>
+                    </condition>
+                    <then>
+                      <assignment>
+                        <left>
+                          <variable>MoveRight</variable>
+                        </left>
+                        <right>
+                          <BOOL>true</BOOL>
+                        </right>
+                      </assignment>
+                    </then>
+                    <elseif>
+                      <condition>
+                        <gt>
+                          <operand1>
+                            <variable>Input0</variable>
+                          </operand1>
+                          <operand2>
+                            <variable>Output0</variable>
+                          </operand2>
+                        </gt>
+                      </condition>
+                      <then>
+                        <assignment>
+                          <left>
+                            <variable>MoveLeft</variable>
+                          </left>
+                          <right>
+                            <BOOL>true</BOOL>
+                          </right>
+                        </assignment>
+                      </then>
+                    </elseif>
+                  </if>
+                  <if>
+                    <condition>
+                      <lt>
+                        <operand1>
+                          <variable>Input1</variable>
+                        </operand1>
+                        <operand2>
+                          <variable>Output1</variable>
+                        </operand2>
+                      </lt>
+                    </condition>
+                    <then>
+                      <assignment>
+                        <left>
+                          <variable>MoveUp</variable>
+                        </left>
+                        <right>
+                          <BOOL>true</BOOL>
+                        </right>
+                      </assignment>
+                    </then>
+                    <elseif>
+                      <condition>
+                        <gt>
+                          <operand1>
+                            <variable>Input1</variable>
+                          </operand1>
+                          <operand2>
+                            <variable>Output1</variable>
+                          </operand2>
+                        </gt>
+                      </condition>
+                      <then>
+                        <assignment>
+                          <left>
+                            <variable>MoveDown</variable>
+                          </left>
+                          <right>
+                            <BOOL>true</BOOL>
+                          </right>
+                        </assignment>
+                      </then>
+                    </elseif>
+                  </if>
+                </body>
+              </pou>
+            </pous>
+          </ST>
+        </body>
+      </pou>
+    </pous>
+  </types>
+  <instances>
+    <configurations>
+      <configuration name="Config0">
+        <resource name="Res0">
+          <task name="task0" priority="0" interval="T#20ms">
+            <pouInstance name="instance0" typeName="RobotController"/>
+          </task>
+        </resource>
+      </configuration>
+    </configurations>
+  </instances>
+</project>
+

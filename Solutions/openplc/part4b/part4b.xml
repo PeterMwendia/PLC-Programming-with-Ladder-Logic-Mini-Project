@@ -1,0 +1,201 @@
+<project xmlns:ns1="http://www.plcopen.org/xml/tc6_0201" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.plcopen.org/xml/tc6_0201">
+  <fileHeader companyName="Unknown" productName="Unnamed" productVersion="1" creationDateTime="2020-09-15T09:29:34"/>
+  <contentHeader name="Unnamed" modificationDateTime="2023-06-14T00:00:00">
+    <coordinateInfo>
+      <fbd>
+        <scaling x="10" y="10"/>
+      </fbd>
+      <ld>
+        <scaling x="10" y="10"/>
+      </ld>
+      <sfc>
+        <scaling x="10" y="10"/>
+      </sfc>
+    </coordinateInfo>
+  </contentHeader>
+  <types>
+    <dataTypes/>
+    <pous>
+      <pou name="CarParkingControl" pouType="program">
+        <interface>
+          <localVars>
+            <variable name="Main_Switch" address="%IX1.0">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="Car_In_Lane" address="%IX1.1">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="Green_Light" address="%QX1.0">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="Red_Light" address="%QX1.1">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="Car_Counter" address="%IW1.0">
+              <type>
+                <INT/>
+              </type>
+            </variable>
+          </localVars>
+        </interface>
+        <body>
+          <ST>
+            <name>CarParkingControl</name>
+            <pous>
+              <pou name="CarParkingControl" pouType="function">
+                <interface>
+                  <formalParameters/>
+                </interface>
+                <body>
+                  <network>
+                    <condition>
+                      <variable>Main_Switch</variable>
+                    </condition>
+                    <network>
+                      <condition>
+                        <GE>
+                          <operand1>
+                            <variable>Car_Counter</variable>
+                          </operand1>
+                          <operand2>
+                            <INT>4</INT>
+                          </operand2>
+                        </GE>
+                      </condition>
+                      <assignment>
+                        <left>
+                          <variable>Red_Light</variable>
+                        </left>
+                        <right>
+                          <BOOL>true</BOOL>
+                        </right>
+                      </assignment>
+                      <assignment>
+                        <left>
+                          <variable>Green_Light</variable>
+                        </left>
+                        <right>
+                          <BOOL>false</BOOL>
+                        </right>
+                      </assignment>
+                    </network>
+                    <network>
+                      <condition>
+                        <variable>Car_In_Lane</variable>
+                      </condition>
+                      <assignment>
+                        <left>
+                          <variable>Red_Light</variable>
+                        </left>
+                        <right>
+                          <BOOL>true</BOOL>
+                        </right>
+                      </assignment>
+                      <assignment>
+                        <left>
+                          <variable>Green_Light</variable>
+                        </left>
+                        <right>
+                          <BOOL>false</BOOL>
+                        </right>
+                      </assignment>
+                      <assignment>
+                        <left>
+                          <variable>Car_Counter</variable>
+                        </left>
+                        <right>
+                          <ADD>
+                            <operand1>
+                              <variable>Car_Counter</variable>
+                            </operand1>
+                            <operand2>
+                              <INT>1</INT>
+                            </operand2>
+                          </ADD>
+                        </right>
+                      </assignment>
+                    </network>
+                    <network>
+                      <assignment>
+                        <left>
+                          <variable>Green_Light</variable>
+                        </left>
+                        <right>
+                          <BOOL>true</BOOL>
+                        </right>
+                      </assignment>
+                      <assignment>
+                        <left>
+                          <variable>Red_Light</variable>
+                        </left>
+                        <right>
+                          <BOOL>false</BOOL>
+                        </right>
+                      </assignment>
+                      <condition>
+                        <variable>Car_Counter</variable>
+                      </condition>
+                      <assignment>
+                        <left>
+                          <variable>Car_Counter</variable>
+                        </left>
+                        <right>
+                          <SUB>
+                            <operand1>
+                              <variable>Car_Counter</variable>
+                            </operand1>
+                            <operand2>
+                              <INT>1</INT>
+                            </operand2>
+                          </SUB>
+                        </right>
+                      </assignment>
+                    </network>
+                  </network>
+                  <network>
+                    <assignment>
+                      <left>
+                        <variable>Red_Light</variable>
+                      </left>
+                      <right>
+                        <BOOL>false</BOOL>
+                      </right>
+                    </assignment>
+                    <assignment>
+                      <left>
+                        <variable>Green_Light</variable>
+                      </left>
+                      <right>
+                        <BOOL>false</BOOL>
+                      </right>
+                    </assignment>
+                  </network>
+                </body>
+              </pou>
+            </pous>
+          </ST>
+        </body>
+      </pou>
+    </pous>
+  </types>
+  <instances>
+    <configurations>
+      <configuration name="Config0">
+        <resource name="Res0">
+          <task name="task0" priority="0" interval="T#20ms">
+            <pouInstance name="instance0" typeName="CarParkingControl"/>
+          </task>
+        </resource>
+      </configuration>
+    </configurations>
+  </instances>
+</project>
+

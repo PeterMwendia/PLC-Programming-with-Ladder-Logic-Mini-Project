@@ -1,0 +1,488 @@
+
+Software Credits and Copyrights
+clapack
+
+
+Copyright (c) 1992-2008 The University of Tennessee.  All rights reserved.
+
+
+$COPYRIGHT$
+
+
+Additional copyrights may follow
+
+
+$HEADER$
+
+
+Redistribution and use in source and binary forms, with or without
+
+modification, are permitted provided that the following conditions are
+
+met:
+
+
+- Redistributions of source code must retain the above copyright
+
+  notice, this list of conditions and the following disclaimer. 
+
+ 
+
+- Redistributions in binary form must reproduce the above copyright
+
+  notice, this list of conditions and the following disclaimer listed
+
+  in this license in the documentation and/or other materials
+
+  provided with the distribution.
+
+ 
+
+- Neither the name of the copyright holders nor the names of its
+
+  contributors may be used to endorse or promote products derived from
+
+  this software without specific prior written permission.
+
+ 
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT  
+
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT 
+
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT  
+
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  
+
+ddassl.f
+
+This software includes ddassl.f, which is in the public domain and can be
+
+downloaded at http://www.netlib.org/ode/.  Used and distributed with permission
+
+of the author. 
+
+Expat
+
+Copyright (c) 1998, 1999, 2000 Thai Open Source Software Center Ltd
+
+                               and Clark Cooper
+
+Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006 Expat maintainers.
+
+
+Permission is hereby granted, free of charge, to any person obtaining
+
+a copy of this software and associated documentation files (the
+
+"Software"), to deal in the Software without restriction, including
+
+without limitation the rights to use, copy, modify, merge, publish,
+
+distribute, sublicense, and/or sell copies of the Software, and to
+
+permit persons to whom the Software is furnished to do so, subject to
+
+the following conditions:
+
+
+The above copyright notice and this permission notice shall be included
+
+in all copies or substantial portions of the Software.
+
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
+
+FMI Library (FMIL)
+
+Copyright (C) 2012 Modelon AB
+
+
+Redistribution and use in source and binary forms, with or without
+
+modification, are permitted provided that the following conditions are met:
+
+- Redistributions of source code must retain the above copyright
+
+  notice, this list of conditions and the following disclaimer.
+
+- Redistributions in binary form must reproduce the above copyright
+
+  notice, this list of conditions and the following disclaimer in the
+
+  documentation and/or other materials provided with the distribution.
+
+- Neither the name of the Modelon AB nor the
+
+  names of its contributors may be used to endorse or promote products
+
+  derived from this software without specific prior written permission.
+
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+
+DISCLAIMED. IN NO EVENT SHALL MODELON AB BE LIABLE FOR ANY
+
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
+
+LINPACK
+
+
+Developed by Jack Dongarra, Jim Bunch, Cleve Moler and Pete Stewart.
+
+ 1 Feb 84 
+
+Minpack
+
+Minpack Copyright Notice (1999) University of Chicago.  All rights reserved
+
+
+Redistribution and use in source and binary forms, with or
+
+without modification, are permitted provided that the
+
+following conditions are met:
+
+
+1. Redistributions of source code must retain the above
+
+copyright notice, this list of conditions and the following
+
+disclaimer.
+
+
+2. Redistributions in binary form must reproduce the above
+
+copyright notice, this list of conditions and the following
+
+disclaimer in the documentation and/or other materials
+
+provided with the distribution.
+
+
+3. The end-user documentation included with the
+
+redistribution, if any, must include the following
+
+acknowledgment:
+
+
+   "This product includes software developed by the
+
+   University of Chicago, as Operator of Argonne National
+
+   Laboratory.
+
+
+Alternately, this acknowledgment may appear in the software
+
+itself, if and wherever such third-party acknowledgments
+
+normally appear.
+
+
+4. WARRANTY DISCLAIMER. THE SOFTWARE IS SUPPLIED "AS IS"
+
+WITHOUT WARRANTY OF ANY KIND. THE COPYRIGHT HOLDER, THE
+
+UNITED STATES, THE UNITED STATES DEPARTMENT OF ENERGY, AND
+
+THEIR EMPLOYEES: (1) DISCLAIM ANY WARRANTIES, EXPRESS OR
+
+IMPLIED, INCLUDING BUT NOT LIMITED TO ANY IMPLIED WARRANTIES
+
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE
+
+OR NON-INFRINGEMENT, (2) DO NOT ASSUME ANY LEGAL LIABILITY
+
+OR RESPONSIBILITY FOR THE ACCURACY, COMPLETENESS, OR
+
+USEFULNESS OF THE SOFTWARE, (3) DO NOT REPRESENT THAT USE OF
+
+THE SOFTWARE WOULD NOT INFRINGE PRIVATELY OWNED RIGHTS, (4)
+
+DO NOT WARRANT THAT THE SOFTWARE WILL FUNCTION
+
+UNINTERRUPTED, THAT IT IS ERROR-FREE OR THAT ANY ERRORS WILL
+
+BE CORRECTED.
+
+
+5. LIMITATION OF LIABILITY. IN NO EVENT WILL THE COPYRIGHT
+
+HOLDER, THE UNITED STATES, THE UNITED STATES DEPARTMENT OF
+
+ENERGY, OR THEIR EMPLOYEES: BE LIABLE FOR ANY INDIRECT,
+
+INCIDENTAL, CONSEQUENTIAL, SPECIAL OR PUNITIVE DAMAGES OF
+
+ANY KIND OR NATURE, INCLUDING BUT NOT LIMITED TO LOSS OF
+
+PROFITS OR LOSS OF DATA, FOR ANY REASON WHATSOEVER, WHETHER
+
+SUCH LIABILITY IS ASSERTED ON THE BASIS OF CONTRACT, TORT
+
+(INCLUDING NEGLIGENCE OR STRICT LIABILITY), OR OTHERWISE,
+
+EVEN IF ANY OF SAID PARTIES HAS BEEN WARNED OF THE
+
+POSSIBILITY OF SUCH LOSS OR DAMAGES. 
+
+Nelder-Mead
+
+
+!     Fortran 90 conversion by Alan Miller, June 1995
+
+!     Alan.Miller @ vic.cmis.csiro.au
+
+Public doman. 
+
+NEWUOA
+
+This software includes newuoa Fortran code, Copyright "Mike Powell" .  Distributed with permission of the author. 
+
+strsep.c
+
+
+Copyright (c) 1990, 1993
+
+     The Regents of the University of California.  All rights reserved.
+
+
+Redistribution and use in source and binary forms, with or without
+
+modification, are permitted provided that the following conditions
+
+are met:
+
+1. Redistributions of source code must retain the above copyright
+
+   notice, this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright
+
+   notice, this list of conditions and the following disclaimer in the
+
+   documentation and/or other materials provided with the distribution.
+
+3. Neither the name of the University nor the names of its contributors
+
+   may be used to endorse or promote products derived from this software
+
+   without specific prior written permission.
+
+
+THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND
+
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+
+ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
+
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+
+OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+
+LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+
+OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+
+SUCH DAMAGE. 
+
+SUNDIALS
+
+
+Copyright © 2002, The Regents of the University of California.
+
+Produced at the Lawrence Livermore National Laboratory.
+
+All rights reserved.
+
+
+Redistribution and use in source and binary forms, with or without
+
+modification, are permitted provided that the following conditions are met:
+
+
+    - Redistributions of source code must retain the above copyright notice,
+
+      this list of conditions and the disclaimer below.
+
+    - Redistributions in binary form must reproduce the above copyright notice,
+
+      this list of conditions and the disclaimer (as noted below) in the
+
+      documentation and/or other materials provided with the distribution.
+
+    - Neither the name of the UC/LLNL nor the names of its contributors may be
+
+      used to endorse or promote products derived from this software without
+
+      specific prior written permission.
+
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+
+DISCLAIMED. IN NO EVENT SHALL THE REGENTS OF THE UNIVERSITY OF CALIFORNIA, THE
+
+U.S. DEPARTMENT OF ENERGY OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+
+OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+Additional BSD Notice
+
+
+    - This notice is required to be provided under our contract with the U.S.
+
+      Department of Energy (DOE). This work was produced at the University of
+
+      California, Lawrence Livermore National Laboratory under Contract No.
+
+      W-7405-ENG-48 with the DOE.
+
+    - Neither the United States Government nor the University of California nor
+
+      any of their employees, makes any warranty, express or implied, or
+
+      assumes any liability or responsibility for the accuracy, completeness,
+
+      or usefulness of any information, apparatus, product, or process
+
+      disclosed, or represents that its use would not infringe privately-owned
+
+      rights.
+
+    - Also, reference herein to any specific commercial products, process, or
+
+      services by trade name, trademark, manufacturer or otherwise does not
+
+      necessarily constitute or imply its endorsement, recommendation, or
+
+      favoring by the United States Government or the University of California.
+
+      The views and opinions of authors expressed herein do not necessarily
+
+      state or reflect those of the United States Government or the University
+
+      of California, and shall not be used for advertising or product
+
+      endorsement purposes. 
+
+SuperLU
+
+
+Copyright (c) 2003, The Regents of the University of California, through
+
+Lawrence Berkeley National Laboratory (subject to receipt of any required 
+
+approvals from U.S. Dept. of Energy) 
+
+
+All rights reserved. 
+
+
+Redistribution and use in source and binary forms, with or without modification,
+
+are permitted provided that the following conditions are met: 
+
+
+(1) Redistributions of source code must retain the above copyright notice,
+
+this list of conditions and the following disclaimer. 
+
+(2) Redistributions in binary form must reproduce the above copyright notice,
+
+this list of conditions and the following disclaimer in the documentation
+
+and/or other materials provided with the distribution. 
+
+(3) Neither the name of Lawrence Berkeley National Laboratory, U.S. Dept. of
+
+Energy nor the names of its contributors may be used to endorse or promote
+
+products derived from this software without specific prior written permission.
+
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS
+
+IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+
+PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  
+
+

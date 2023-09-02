@@ -1,0 +1,41 @@
+Please use the following procedure for testing your submissions in the autograder:
+
+1. copy your .st file to the relevant folder within "Submissions" folder in the desktop.
+
+2. Depending on your part, run the autograder with the following commands. You should first navigate to the "autograder" folder from the terminal. Before running the autograder for other parts, stop the PLC in the browser and close the google chrome window.
+
+    - part1a:
+                python grader_p1a.pyc -o part1a.csv ~/Desktop/Submissions/part1a/ part1a
+
+    - part1b:
+                python grader_p1b.pyc -o part1b.csv ~/Desktop/Submissions/part1b/ part1b
+
+    - part1c:
+                python grader_p1c.pyc -o part1c.csv ~/Desktop/Submissions/part1c/ part1c
+
+    - part2:
+                python grader_p2.pyc -o part2.csv ~/Desktop/Submissions/part2/ ~/Desktop/ProcessSimulator/RobotPath/ProcessSimulator.py
+
+    - part3:
+                python grader_p3.pyc -o part3.csv ~/Desktop/Submissions/part3/ part3
+
+    - part4a:
+                python grader_p4a.pyc -o part4a.csv ~/Desktop/Submissions/part4a/ part4a
+
+    - part4b:
+                python grader_p4b.pyc -o part4b.csv ~/Desktop/Submissions/part4b/ part4b
+
+    - part5a:
+                python grader_p5a.pyc -o part5a.csv ~/Desktop/Submissions/part5a/ ~/Desktop/ProcessSimulator/StirringSystem/
+
+    - part5b:
+                python grader_p5b.pyc -o part5b.csv ~/Desktop/Submissions/part5b/ ~/Desktop/ProcessSimulator/StirringSystem/
+
+    - part6a:
+                python grader_p6a.pyc -o part6a.csv ~/Desktop/Submissions/part6a/ part6a
+
+    - part6b:
+                python grader_p6b.pyc -o part6b.csv ~/Desktop/Submissions/part6b/ part6b
+
+    - partE:
+                python grader_pE.pyc -o partE.csv ~/Desktop/Submissions/partE/ partE
