@@ -23,26 +23,25 @@ To set up your environment and install OpenPLC, follow these steps:
 
    - Download and install [VirtualBox](https://www.virtualbox.org/) (for Windows users) or [VMware Fusion](https://www.vmware.com/products/fusion.html) (for Mac users).
 
-2. **Download the Virtual Machine (VM) and Project Files**
+2. **Create a New Virtual Machine (VM)**
 
-   - Download the provided VM files in .ova format and project files in .zip format.
-
-3. **Import the VM into VirtualBox or VMware**
-
-   - Open VirtualBox (for Windows users) or VMware Fusion (for Mac users).
-   - Import the VM by clicking on the .ova file or importing it directly in your hypervisor.
-
-4. **Set VM Specifications**
-
-   - Configure the VM settings with the following specifications for optimal performance:
+   - If you are using Ubuntu, you can create a new virtual machine using software like VirtualBox or VMware. Configure the VM with the following specifications for optimal performance:
      - CPU allocation: 4 physical cores or more
      - RAM allocation: 8192 MB or more
 
-5. **Transfer Project Files to VM**
+3. **Clone This GitHub Repository**
 
-   - Drag and drop the project files into the VM.
+   - Clone this GitHub repository to your local machine by running the following command:
 
-6. **Start OpenPLC Server**
+     ```shell
+     git clone https://github.com/PeterMwendia/PLC-Programming-with-Ladder-Logic-Mini-Project.git
+     ```
+
+3. **Transfer Project Files to VM**
+
+   - Transfer the cloned project files to your VM.
+
+4. **Start OpenPLC Server**
 
    - Open a terminal in the VM and navigate to the "OpenPLC v3" folder.
    - Start the OpenPLC server by running the following command:
@@ -59,7 +58,7 @@ To set up your environment and install OpenPLC, follow these steps:
 
    - Access the OpenPLC server in your web browser at http://localhost:8080.
 
-7. **Begin Programming**
+5. **Begin Programming**
 
    - Open a terminal in the VM and navigate to the "/Desktop/OpenPLC Editor" directory.
    - Run the OpenPLC editor with:
@@ -70,12 +69,12 @@ To set up your environment and install OpenPLC, follow these steps:
 
    - Create an empty folder for each project part and choose the directory for that part.
 
-8. **Testing and Compilation**
+6. **Testing and Compilation**
 
    - Test the performance of your written program using the Run button within the IDE.
    - Generate XML and .ST versions of the program in the relevant directory.
 
-9. **Simulators**
+7. **Simulators**
 
    - Use provided simulators to test your programs for specific project parts.
 
